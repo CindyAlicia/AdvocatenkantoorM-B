@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="my-script.js" async></script>
+        <title>M&B Advocatenkantoor</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav>
+                    <a href="index.html" class="logo">
+                        <p id="mb">M&B</p>
+                        <p id="kantoor">Advocatenkantoor</p>
+                    </a>
+                    <!-- Navigatie links -->
+                    <div class="links" id="linkjes">
+                        <a href="index.html">Home</a>
+                        <a href="specialisme.html">Specialisme</a>
+                        <a href="werkmethode.html">Werkmethode</a>
+                        <a href="vragen.html">Veelgestelde vragen</a>
+                        <a href="overons.html">Over ons</a>
+                    </div>
+                    <!-- Hamburger menu icon -->
+                    <i href="javascript:void(0);" id="hamburger" class="material-icons" onclick="myFunction()">menu</i>
+                </nav>
+                <div class="banner">
+                    <img class="bannerimg" src="images/dylan-gillis-KdeqA3aTnBY-unsplash.jpg" alt="banner image">
+                </div>
+            </header>
+
+            <main>
+                <h1>Over ons</h1>
+                <h2>Introductie</h2>
+                <p>Het kantoor Van der Meer & Van den Bosch is in 2020 opgericht door Hendrik van den Bosch en Mr Julia van der Meer. Het kantoor is in de loop der jaren wegens het steeds toenemende aantal zaken en cliënten gegroeid en er zijn thans vier advocaten werkzaam op uiteenlopende rechtsgebieden.</p>
+                <div class="flex-container-reverse">
+                    <img class="image" src="images/kantoor.jpeg">
+                    <section class="information">
+                        <h2>Historie</h2>
+                        <p>Het kantoor was in de begintijd gevestigd in buiten het centrum, en is thans gevestigd in het karakteristieke en sfeervolle pand aan de Raamstraat in het centrum Den Haag.</p>
+                        <h2>Onze visie</h2>
+                        <p>Al onze advocaten worden geleid door maar één belang, en dat is het belang van onze cliënt. Wij streven naar uitstekende juridische dienstverlening en het beste resultaat in alle zaken. Daarbij voorzien onze advocaten de cliënt van duidelijk en concreet advies, en wordt in een zo vroeg mogelijk stadium de strategie bepaald. De advocaten die zijn verbonden aan het kantoor zijn alle geselecteerd op basis van hun bijzondere expertise en ervaring. Kwaliteit staat bij ons zeer hoog in het vaandel, en dit vertaalt zich in een succesvolle behartiging van de belangen van onze cliënten.</p>
+                    </section>
+                </div>
+                
+                <!-- chat functie -->
+                <aside id="overlay">
+                    <div id="chatbot">
+                        <i class="material-icons icon-chat" onclick="off()">close</i>
+                        <p class="bot">Hallo! Ik ben de M&B chatbot. Hoe kan ik u helpen?</p>
+                        <p class="time">18.22</p>
+                        <p class="question">Ik heb een vraag.</p>
+                        <p class="question">Ik wil informatie over een specialisme.</p>
+                        <p class="question">Ik heb een vraag over de werkmethode.</p>
+                        <input type="text" id="text" name="text" placeholder="Type hier...">
+                    </div>
+                </aside>
+                <button id="chat" onclick="on()" class="material-icons icon-color">chat_bubble</button>
+            </main>
+
+            <footer class="flex-footer">
+                <div class="item-footer">
+                    <h3>Adres</h3>
+                    <p>Raamstraat 42 <br> Den Haag</p>
+                </div>
+                <div>
+                    <h3>Contactgegevens</h3>
+                    <span class="icon">
+                        <i class="material-icons icon-color">call</i>
+                        <a href=”tel:0612345678”>(+31)06 12345678</a>
+                    </span>
+                    <br>
+                    <span class="icon">
+                        <i class="material-icons icon-color">email</i>
+                        <a href=”mailto:eline@advocatenmenb.com>info@advocatenmenb.com</a>
+                    </span>
+                    <br>
+                </div>
+                <div>
+                    <h3><a href="disclaimer.html" id="disclaimer">Disclaimer</a></h3>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
